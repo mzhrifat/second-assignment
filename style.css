@@ -2,6 +2,7 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: 'Lato', sans-serif; 
  font-family: 'open sans',sans-serif;
 font-family: 'Work Sans', sans-serif;
@@ -17,13 +18,17 @@ font-family: 'Work Sans', sans-serif;
   
 }
 .text-light-gray{
-  color:ghostwhite;
+  color:rgb(11, 11, 19);
 }
-nav logo{
+nav, .logo{
   display: flex;
-  padding: 5px;
 
 }
+nav, .h2{
+  color:#fff;
+  
+}
+
 nav{
   display: flex;
   padding: 2% 6%;
@@ -31,9 +36,6 @@ nav{
   align-items: center;
 }
 
-nav img{
-  width: 150px;
-}
 
 .nav-links{
   flex: 1;
@@ -80,17 +82,19 @@ position: relative;
   color:wheat;
 }
  /* /* Input fields and button styles */
-      .search-form {
+      search-form {
         display: flex;
         justify-content: center;
         margin-top: 2rem;
+        
       }
 
-      .search-form input[type="text"] {
+       .search-form input[type="text"] {
         padding: 0.5rem;
         border: 1px solid #ccc;
         border-radius: 4px;
         margin-right: 1rem;
+        
       }
 
       .search-form button {
@@ -100,7 +104,319 @@ position: relative;
         padding: 0.5rem 1rem;
         border-radius: 4px;
         cursor: pointer;
+        transition: 1s;
       } 
-   
+      nav .fa{
+        display: none;
+      }
+      .container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+    .text-section {
+        width: 50%;
+    }
+    .image-section {
+        width: 40%;
+        height: 30%;
+        margin-right: 150px;
+    }
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+  }
+  .description {
+      margin-top: 20px;
+  }
+  .list-item {
+      font-weight: none;
+      margin-top: 10px;
+  }
+  .button {
+      background-color: orange;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      border-radius: 5px;
+      font-size: 20px;
+      margin: 20px 2px;
+      cursor: pointer;
+  }
+  /* --destination styles */
+  .text {
+    font-size: 20px;
+    text-align: center;
+    font: bold;
+    padding: 40px;
+    
+
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    
+  }
 
 
+
+  .destination {
+    position: relative;
+  }
+
+  .destination img {
+    width: auto;
+    height: auto;
+    margin-left: 2%;
+    margin-right: 20%;
+    
+  }
+
+  .destination-vertical img {
+
+    margin-left: 50%;
+    margin-right: 50%;
+    text-align: center;
+  
+    
+  }
+
+  .destination .label {
+    position: absolute;
+    bottom: 100px;
+    left: 125px;
+    color:whitesmoke;
+    font-size: 25px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .destination-vertical .label-text {
+    position: absolute;
+    /* bottom: 100px; */
+    left: 605px;
+    color:blueviolet;
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    
+  }
+  /* why choose us */
+  
+  .features{
+    margin-top: 130px;
+    display: flex;
+    gap: 150px;
+  }
+  
+  .feature-content-title {
+    text-align: center ;
+    
+  }
+  
+  .feature-content .card{
+    display: grid;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background: #d62a2a;
+    box-shadow: 0px  4px 30px 0px ;
+  }
+/* CSS code */
+* {
+  /* box-sizing: border-box; */
+  margin: 0;
+  padding: 0;
+}
+
+.container1 {
+  display: flex;
+  height: 100vh;
+  padding-top: 10%;
+  
+  gap: 10%;
+}
+
+.left {
+  width: 50%;
+  background-color: #f0f0f0;
+  padding: 32px   ;
+  gap: 55px;
+}
+
+.left h1 {
+  font-size: 48px;
+  color: #333;
+}
+
+.left p {
+  font-size:20px;
+  color: #c5c1c1;
+  margin-top: 1rem;
+}
+
+.left ul {
+  list-style: none;
+  margin-top: 16px;
+}
+
+.left li {
+  font-size: 20px;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.left button {
+  display: block;
+  width: 10rem;
+  height: 48px;
+  background-color:rgb(254, 133, 4);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  margin-top: 16px;
+  cursor: pointer;
+}
+
+.right {
+  width: 50%;
+  padding: 32px;
+  text-align: center;
+  justify-content: center;
+  
+  
+}
+
+.right h2 {
+  font-size: 32px;
+  color: #333;
+  
+}
+
+.right img {
+  width: 100%;
+  height: auto;
+  margin-top: 16px;
+  
+}
+
+/* Base styles */
+
+.container2 {
+  padding-top: 10%;
+  margin-top: auto;
+  display: flex;
+  /* width: 50%; */
+  height: auto;
+  border: #f90;
+  border-radius: 1rem;
+}
+
+/* Left section (newsletter form) */
+.left1 {
+  width: 50%;
+  background-color: #dbd1d1;
+  padding: 2rem;
+  display: grid;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.left1 h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  /* margin-bottom: 50%; */
+}
+
+.left1 p {
+  font-size: 1rem;
+  color: #f8eeee;
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+.left1 input[type="text"],
+.left1 input[type="email"] {
+  width: 100%; 
+  padding-top: 1rem;
+  margin-bottom: 3rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.left1 button {
+  background-color: #f90;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.left button:hover {
+  background-color: #e68000;
+}
+
+/* Right section (scenic landscape) */
+.right {
+  width: 50%;
+  position: relative;
+}
+
+.right img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Promotional offer banner */
+.promo-banner {
+  position: absolute;
+  bottom: 20%;
+  right: 5%;
+  background-color: #f90;
+  color: #fff;
+  padding: 10px  16px;
+  border-top-left-radius: 4px;
+  font-size: 15px;
+}
+
+
+
+  /* footer */
+  .footer {
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  .logo1 {
+    padding: 50px;
+    color: orange;
+    font-size: 30px;
+    margin-bottom: 20px;
+    
+          }
+          .description {
+              color: grey;
+              margin-bottom: 20px;
+              
+          }
+          .social-icons {
+              margin-bottom: 20px;
+              margin-left: 10px;
+              margin-right: 10px;
+              
+          }
+          .copyright {
+            color: grey;
+            font-size: 12px;
+        }

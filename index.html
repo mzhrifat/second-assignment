@@ -4,19 +4,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tour BEE</title>
+  <title>TOUR BEE</title>
   <link rel="stylesheet" href="style.css">
+  <Link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
 </head>
 
 <body>
   <section class="header">
     <nav>
-
+      <!-- <div class="logo">
+        <img src="images/logo.png">
+        <h2 class="section-tite"><b>Tour Bee</b></h2>
+      </div> -->
       <!-- <img src="Images/Group 40071 (2).png"> -->
       <a href="index.html"><img src="images/logo.png"></a>
-      <h2 class="section-tite"><b>Tour Bee</b></h2>
+      <h2 class="section-tite">Tour Bee</h2>
 
-      <div class="nav-links">
+
+      <div class="nav-links" id="navlinks">
+        <i class="fa fa-times" onclick="hidemenu()"></i>
         <ul>
           <li><a href="">Home</a></li>
           <li><a href="">Packages</a></li>
@@ -25,6 +32,7 @@
           <li><a href="">Contact</a></li>
         </ul>
       </div>
+      <i class="fa fa-bars" onclick="showmenu()"></i>
     </nav>
     <div class="text-box">
       <h1>Explore Your Travel</h1>
@@ -40,8 +48,176 @@
       </div>
     </div>
 
+  </section>
+
 
   </section>
+  <!-- condition part -->
+  <div class="container">
+    <div class="text-section">
+      <div class="title">Our Popular Tours</div>
+
+      <p class="description"><em>We are The Tour Bees provide you the best experience of travelling.</em></p>
+
+      <p class="list-item"> We listen to our clients objectives and aspirations and therefore provide customize
+        solutions.</p>
+
+      <p class="list-item">We are innovative and passionate about the work we do. We always come up with new ways to
+        enrich your
+        revenue to greater heights.</p>
+
+      <p class="list-item">We always deliver on time: We genuinely understand the value of time in business and hence
+        adhere to time and deliver all projects on time to our customers.</p>
+
+      <button class="button">Read More</button>
+    </div>
+    <div class="image-section">
+      <img src="images/mountain.png" alt="Mountain Image">
+    </div>
+  </div>
+  <!-- destination part -->
+  <div class="text">
+    <h2>Choose your destination</h2>
+    <p>Please choose your destination & travelling the place</p>
+  </div>
+  <div class="container">
+
+    <div class="destination">
+      <img src="images/maldives.png" alt="Maldives">
+      <div class="label">Maldives</div>
+    </div>
+    <div class="destination">
+      <img src="images/indonessia.png" alt="Indonesia">
+      <div class="label">Indonesia</div>
+    </div>
+    <div class="destination">
+      <img src="images/srilanka.png" alt="Sri Lanka">
+      <div class="label">Sri Lanka</div>
+    </div>
+    <div class="destination">
+      <img src="images/north america.png" alt="North America">
+      <div class="label">North America</div>
+    </div>
+    <div class="destination">
+      <img src="images/kashmir.png" alt="Kashmir">
+      <div class="label">Kashmir</div>
+    </div>
+    <div class="destination">
+      <img src="images/bangladesh.png" alt="Bangladesh">
+      <div class="label">Bangladesh</div>
+    </div>
+    <div class="destination-vertical">
+      <img src="images/bandarban (2).png" alt="Bandarban">
+      <div class="label-text">Bandarban</div>
+    </div>
+  </div>
+
+  <!-- /* why choose us  */ -->
+
+  <section class="features">
+    <div class="feature-content">
+      <h3 class="feature-content-title">Why Choose Us </h3>
+      <p>Choose us for a seamless blend of expertise and dedication, delivering unparalleled solutions
+        tailored to your needs.</p>
+    </div>
+    <div class="card">
+      <img src="images/hotel (1).png">
+      <h4>Handpiced Hotels</h4>
+
+      <p class="text-light-gray"> There are many variations of passages of Lorem Ipsum available, but the majority
+        have suffered alteration in some form, by injected humour, or randomized</p>
+    </div>
+    <div class="card">
+      <img src="images/support.png">
+      <h4>world class services</h4>
+      <p class="text-light-gray"> There are many variations of passages of Lorem Ipsum available, but the majority
+        have suffered alteration in some form, by injected humour, or randomized</p>
+    </div>
+    <div class="card">
+      <img src="images/coupon.png">
+      <h4>Best price Guarantee</h4>
+      <p class="text-light-gray"> There are many variations of passages of Lorem Ipsum available, but the majority
+        have suffered alteration in some form, by injected humour, or randomized</p>
+    </div>
+
+  </section>
+  <!-- simple perfect place -->
+  <div class="container1">
+    <div class="left">
+      <h1>A Simple Perfect Place To Get Lost</h1>
+      <p>Amet consectetur. Vulputate commodo felis molestie risus ornare nulla amet et. Libero commodo sagittis
+        dignissim adipiscing quis.</p>
+      <ul>
+        <li>Adipiscing ornare pellentesque mauris volutpat tortor vitae platea porta lacus. Lectus suspendisse nullam.
+        </li>
+        <li>Adipiscing ornare pellentesque mauris volutpat tortor vitae platea porta lacus. Lectus suspendisse nullam.
+        </li>
+      </ul>
+      <button>See More</button>
+    </div>
+    <div class="right">
+      <h2>Watch Our Mountain in Bangladesh</h2>
+      <img src="images/Rectangle 8 (1).png"></img>
+    </div>
+  </div>
+
+  <!-- newsletter -->
+  <div class="container2">
+    <div class="left1">
+      <h1> Newsletter</h1>
+      <p>Get your daily dose of travel news & tips. Sign up today!</p>
+      <form action="subscribe.php" method="post">
+        <input type="text" name="name" placeholder="Enter your name" required>
+        <input type="email" name="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+    <div class="right">
+
+      <img src="images/Rectangle 8 (1).png" alt="Scenic landscape">
+      <div class="promo-banner">Travel.com Save up to 70%</div>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- footer -->
+  <div class="footer">
+
+    <div class="logo1"><img src="images/logo.png">TouR BEE</div>
+    <div class="description">Tour BEE is thre part of Booking Holdings Inc., the world leader in online travel and
+      related services.
+
+    </div>
+    <div class="social-icons">
+      <img src="images/twitter.png">
+      <img src="images/facebook.png">
+      <img src="images/instagram.png">
+    </div>
+    <div class="copyright">
+      <h3>2023, All Rights Reserved.</h3>
+    </div>
+  </div>
+
+
+
+
+
+
+  <!-- javascript toggle menu  ---->
+  <script>
+    var navlinks = document.getElementById("navlinks");
+    function showmenu() {
+      navlinks.style.right = "0";
+    }
+    function hidemenu() {
+      navlinks.style.right = "-200px";
+    }
+  </script>
+
+
 </body>
 
 </html>
