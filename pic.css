@@ -1,0 +1,57 @@
+/* --destination styles */
+.text {
+  font-size: 20px;
+  text-align: center;
+  font: bold;
+  padding: 40px;
+  
+
+}
+
+.container-p {
+  display: grid;
+  
+  grid-template-columns: repeat(3,3fr );
+  gap: 10px;
+  
+}
+
+.destination {
+  position: relative;
+}
+
+.destination img {
+  width: auto;
+  height: auto;
+  margin-left: 5%;
+  margin-right: 0%;
+  
+}
+
+.destination .label {
+  position: absolute;
+  bottom: 100px;
+  left: 125px;
+  color:whitesmoke;
+  font-size: 25px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+/* .destination-vertical img {
+
+  margin-left: 50%;
+  margin-right: 50%;
+  margin-top: 2%;
+  /* text-align: center; */
+
+}
+
+/* .destination-vertical label-text {
+  position: absolute;
+  bottom: 100px;
+  left: 125px;
+  color:purple;
+  font-size: 25px;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  
+} */ */
